@@ -1,6 +1,15 @@
 import streamlit as st
 import string
 
+st.set_page_config(
+     page_title="Encryption by Saaswath",
+     page_icon="🔏",
+     layout="wide",
+     initial_sidebar_state="expanded",
+     menu_items={
+         'About': "# This is a header. This is an *extremely* cool app!"
+     }
+ )
 enc_map = {}
 dec_map = {}
 k = 5
