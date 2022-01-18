@@ -4,7 +4,7 @@ import string
 st.set_page_config(
      page_title="Encryption by Saaswath",
      page_icon="🔏",
-     layout="wide",
+     layout="",
      initial_sidebar_state="expanded",
      menu_items={
          'About': "## Substitution Cipher. \nWith ❤ by *Saaswath*"
@@ -65,7 +65,7 @@ def decrypt(ct):
 
 
 st.title('Substitution Cipher Tryout')
-st.subheader('by Saaswath')
+st.markdown('### by Saaswath')
 in_txt = st.text_input('Your Message', placeholder="Enter text to encrypt/decrypt")
 crypt_opt = st.radio(
     "What do you want to do with the text?",
