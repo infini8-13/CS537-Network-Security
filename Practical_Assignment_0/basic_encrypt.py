@@ -4,7 +4,6 @@ import string
 st.set_page_config(
      page_title="Encryption by Saaswath",
      page_icon="🔏",
-     layout="wide",
      initial_sidebar_state="expanded",
      menu_items={
          'About': "## Substitution Cipher. \nWith ❤ by *Saaswath*"
