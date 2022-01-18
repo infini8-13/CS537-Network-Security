@@ -66,7 +66,7 @@ def decrypt(ct):
 
 st.title('Substitution Cipher Tryout')
 st.subheader('by Saaswath')
-in_txt = st.text_input('Text', placeholder="Enter text to encrypt/decrypt")
+in_txt = st.text_input('Your Message', placeholder="Enter text to encrypt/decrypt")
 crypt_opt = st.radio(
     "What do you want to do with the text?",
     ('Encrypt', 'Decrypt'))
