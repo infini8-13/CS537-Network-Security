@@ -60,10 +60,10 @@ in_txt = st.text_input('Text', placeholder="Enter text to encrypt/decrypt")
 crypt_opt = st.radio(
     "What do you want to do with the text?",
     ('Encrypt', 'Decrypt'))
-
-if crypt_opt == "Encrypt":
-    st.write("Here is the encipher:")
-    st.markdown('**' + encrypt(in_txt) + '**')
-else:
-    st.write("Here is the decipher:")
-    st.markdown('**' + decrypt(in_txt) + '**')
+if in_txt != "":
+    if crypt_opt == "Encrypt":
+        st.write("Here is the encipher:")
+        st.markdown('**' + encrypt(in_txt) + '**')
+    else:
+        st.write("Here is the decipher:")
+        st.markdown('**' + decrypt(in_txt) + '**')
